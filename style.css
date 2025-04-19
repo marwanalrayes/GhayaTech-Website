@@ -106,9 +106,20 @@ nav ul li a:hover {
   color: #ffcc00;
 }
 
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 /* Hero Section */
 .hero {
-  background: url("/images/background-HomePage.jpg") center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
   min-height: 93vh;
   display: flex;
   justify-content: center;
@@ -118,14 +129,14 @@ nav ul li a:hover {
 }
 
 .hero-content {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.045);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 20px;
   padding: 3rem;
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.496);
   color: #2d6c5b;
 }
 
@@ -848,4 +859,8 @@ footer {
   font-weight: bold;
   font-family:'Fairuz-Bold';
   margin-bottom: 50px;
+}
+#title-section-1{
+  font-family: "Fairuz-Bold";
+  color: #ffffff;
 }
