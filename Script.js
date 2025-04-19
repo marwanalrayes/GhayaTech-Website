@@ -63,8 +63,8 @@ function updateCarousel() {
 }
 
 updateCarousel();
-
 setInterval(() => {
     current = (current + 1) % cards.length;
     updateCarousel();
 }, 2500);
+observer.observe(section);
